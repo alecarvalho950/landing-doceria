@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff0f5;
+  color: #333;
+}
+
+header {
+  background-color: #ff69b4;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 2em;
+  color: #d63384;
+  margin-bottom: 20px;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.produto {
+  background: #ffe4e1;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  text-align: left;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+.produto h3 {
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.produto p {
+  font-size: 0.95em;
+  margin-bottom: 5px;
+}
+
+.produto ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.produto ul li {
+  background-color: #fff;
+  padding: 5px 10px;
+  margin: 4px 0;
+  border-radius: 8px;
+  font-size: 0.9em;
+  color: #d63384;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.btn-whatsapp {
+  margin-top: 40px;
+  background-color: #25D366;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebc5b;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px;
+  background: #ff69b4;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* Responsivo para celular */
+@media screen and (max-width: 600px) {
+  .produto {
+    width: 100%;
+  }
+
+  header img {
+    height: 140px;
+  }
+
+  .container {
+    padding: 20px 10px;
+  }
+
+  .btn-whatsapp {
+    font-size: 1em;
+    padding: 12px 20px;
+  }
+}
